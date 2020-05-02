@@ -5,38 +5,41 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <div>
-        <h1>My JS Game</h1>
+    <div class="main">
         <div id="reset-container">
-            <button id="reset-button">RESET</button><br>
-            NUMBER OF RESETS: <span id="num-resets">0</span>
-        </div>
-        <div class="clear"></div>
-        <div class="left">
+            <h1>My JS Game</h1>
+            <div>NUMBER OF RESETS: <span id="num-resets">0</span></div>
+            <div><button id="reset-button">RESET</button></div>
+            <div><button id="autoplay-button">AUTOPLAY</button></div>
+            </div>
+        <!-- <div class="clear"></div> -->
+        <div class="team col-flex">
             <h2>
                 Team 1
             </h2>
-            <div class="goals">
-                SHOTS TAKEN: <span id="teamone-numshots">0</span><br>
-                GOALS: <span id="teamone-numgoals">0</span>
-            </div>
             <div>
                 <button id="teamone-shoot-button">SHOOT</button>
             </div>
+            <div class="goals">
+                GOALS: <span id="teamone-numgoals">0</span><br>
+                SHOTS TAKEN: <span id="teamone-numshots">0</span><br>
+                GAMES WON: <span id="teamone-wins">0</span>
+            </div>
         </div>
-        <div class="right">
+        <div class="team col-flex">
             <h2>
                 Team 2
             </h2>
-            <div class="goals">
-                SHOTS TAKEN: <span id="teamtwo-numshots">0</span><br>
-                GOALS: <span id="teamtwo-numgoals">0</span>
-            </div>
             <div>
                 <button id="teamtwo-shoot-button">SHOOT</button>
             </div>
+            <div class="goals">
+                GOALS: <span id="teamtwo-numgoals">0</span><br>
+                SHOTS TAKEN: <span id="teamtwo-numshots">0</span><br>
+                GAMES WON: <span id="teamtwo-wins">0</span>
+            </div>
         </div>
-        <div class="clear"></div>
+        <!-- <div class="clear"></div> -->
     </div>
 
     <audio id="shoot-sound" src="./assets/sounds/shoot.wav"></audio>

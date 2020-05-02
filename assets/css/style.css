@@ -1,15 +1,64 @@
-.hide {
-    display: none;
+* {
+    box-sizing: border-box;
 }
-.left {
-    float: left;
+
+body {
+    background-color: rgb(80, 126, 80);
 }
-.right {
-    float: right;
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 10px;
+    font-weight: bold;
+    color: rgb(223, 235, 233);
+    background-color: rgb(240, 116, 71);
+    font-family: Arial, Helvetica, sans-serif;
+
+    border: 5px solid black;
 }
-.clear {
-    clear: both;
+
+h1, h2 {
+    margin: 0;
 }
-#reset-container, h1 {
+
+button {
+    color: rgb(223, 235, 233);
+    background-color: black;
+    border-radius: 5px;
+    margin-top: 5px 0px;
+}
+
+#reset-container {
+    flex-basis: 100%;
+    margin: 5px auto;
     text-align: center;
+    width: fit-content;
+}
+
+#reset-container button {
+    width: 190px;
+}
+
+.team {
+    background-color: rgb(167, 49, 7);
+}
+
+.col-flex {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+    border-radius: 3px;
+}
+
+.col-flex h2 {
+    text-align: center;
+}
+
+.col-flex button {
+    width: 100%;
+    margin-bottom: 10px;
 }
