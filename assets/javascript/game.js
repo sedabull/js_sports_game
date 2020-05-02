@@ -1,5 +1,6 @@
 const reset = document.querySelector('#reset-button');
 const numResets = document.querySelector('#num-resets');
+const shootSound = document.querySelector('#shoot-sound');
 
 const teamOneShoot = document.querySelector('#teamone-shoot-button');
 const teamOneShots = document.querySelector('#teamone-numshots');
@@ -18,6 +19,7 @@ reset.addEventListener('click', function() {
 });//end reset click
 
 teamOneShoot.addEventListener('click', function() {
+    shootSound.play();
     teamOneShots.innerText = Number(teamOneShots.innerText) + 1;
     if (Math.random() < .3) {
         teamOneGoals.innerText = Number(teamOneGoals.innerText) + 1;
@@ -25,6 +27,7 @@ teamOneShoot.addEventListener('click', function() {
 });//end teamOneShoot click
 
 teamTwoShoot.addEventListener('click', function() {
+    shootSound.play();
     teamTwoShots.innerText = Number(teamTwoShots.innerText) + 1;
     if (Math.random() < .3) {
         teamTwoGoals.innerText = Number(teamTwoGoals.innerText) + 1;
